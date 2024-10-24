@@ -1,0 +1,119 @@
+{
+  "path-request": [
+    {
+        "request-id": "0",
+        "source": "QF2-n2",
+        "destination": "QF3-n2",
+        "src-tp-id": "QF2-n2",
+        "dst-tp-id": "QF3-n2",
+        "bidirectional": true,
+        "path-constraints": {
+          "te-bandwidth": {
+            "technology": "flexi-grid",
+            "trx_type": "ADVA_TeraFlex",
+            "trx_mode": "mode 2",
+            "tx_power": 0.002511886432,
+            "effective-freq-slot": [
+              {
+                "N": null,
+                "M": null
+              }
+            ],
+            "spacing": 50000000000.0,
+            "max-nb-of-channel": 1,
+            "output-power": 0.002511886432,
+            "path_bandwidth": 200000000000.0
+          }
+        }
+      },
+      {
+        "request-id": "1",
+        "source": "QF1-n1",
+        "destination": "QF3-n1",
+        "src-tp-id": "QF1-n1",
+        "dst-tp-id": "QF3-n1",
+        "bidirectional": true,
+        "path-constraints": {
+          "te-bandwidth": {
+            "technology": "flexi-grid",
+            "trx_type": "ADVA_TeraFlex",
+            "trx_mode": "mode 2",
+            "tx_power": 0.00125892541,
+            "effective-freq-slot": [
+              {
+                "N": null,
+                "M": null
+              }
+            ],
+            "spacing": 50000000000.0,
+            "max-nb-of-channel": 1,
+            "output-power": 0.00125892541,
+            "path_bandwidth": 100000000000.0
+          }
+        }
+      },
+      {
+        "request-id": "2",
+        "source": "QF1-n2",
+        "destination": "QF2-n1",
+        "src-tp-id": "QF1-n2",
+        "dst-tp-id": "QF2-n1",
+        "bidirectional": true,
+        "path-constraints": {
+          "te-bandwidth": {
+            "technology": "flexi-grid",
+            "trx_type": "ADVA_TeraFlex",
+            "trx_mode": "mode 2",
+            "tx_power": 0.002511886432,
+            "effective-freq-slot": [
+              {
+                "N": null,
+                "M": null
+              }
+            ],
+            "spacing": 50000000000.0,
+            "max-nb-of-channel": 1,
+            "output-power": 0.002511886432,
+            "path_bandwidth": 200000000000.0
+          }
+        }
+      },
+      {
+        "request-id": "4",
+        "source": "QF1-n2",
+        "destination": "QF3-n2",
+        "src-tp-id": "QF1-n2",
+        "dst-tp-id": "QF3-n2",
+        "bidirectional": true,
+        "path-constraints": {
+          "te-bandwidth": {
+            "technology": "flexi-grid",
+            "trx_type": "ADVA_TeraFlex",
+            "trx_mode": "mode 2",
+            "tx_power": 0.002511886432,
+            "effective-freq-slot": [
+              {
+                "N": null,
+                "M": null
+              }
+            ],
+            "spacing": 50000000000.0,
+            "max-nb-of-channel": 1,
+            "output-power": 0.002511886432,
+            "path_bandwidth": 200000000000.0,
+            "route-object-include-exclude": [
+              {
+              "explicit-route-usage": "route-include-ero",
+              "index": 0,
+              "num-unnum-hop": {
+                    "node-id": "R2",
+                    "link-tp-id": "link-tp-id is not used",
+                    "hop-type": "STRICT"
+                }
+              }
+            ]
+          }
+        }
+      }
+  ]
+}

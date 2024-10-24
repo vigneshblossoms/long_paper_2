@@ -1,0 +1,132 @@
+{     
+  "Edfa":[
+    {
+      "type_variety": "AM-S23L",
+      "type_def": "variable_gain",
+      "gain_flatmax": 23,
+      "gain_min": 11,
+      "p_max": 23,
+      "nf_min": 4.5,
+      "nf_max": 14,
+      "out_voa_auto": true,
+      "allowed_for_design": true
+    },
+    {
+      "type_variety": "MTPB-OSC-C-PRE",
+      "type_def": "variable_gain",
+      "gain_flatmax": 35,
+      "gain_min": 19,
+      "p_max": 20,
+      "nf_min": 5.4,
+      "nf_max": 11.4,
+      "out_voa_auto": true,
+      "allowed_for_design": true
+    },
+    {
+      "type_variety": "MTPB-OSC-C-BOOST",
+      "type_def": "variable_gain",
+      "gain_flatmax": 21,
+      "gain_min": 11,
+      "p_max": 20,
+      "nf_min": 6.4,
+      "nf_max": 9.9,
+      "out_voa_auto": true,
+      "allowed_for_design": true
+    }
+],
+"Fiber":[{
+  "type_variety": "SSMF",
+  "dispersion": 1.67e-05,
+  "effective_area": 83e-12,
+  "pmd_coef": 1.265e-15
+  },
+  {
+  "type_variety": "NZDF",
+  "dispersion": 0.5e-05,
+  "effective_area": 72e-12,
+  "pmd_coef": 1.265e-15
+  },
+  {
+  "type_variety": "LOF",
+  "dispersion": 2.2e-05,
+  "effective_area": 125e-12,
+  "pmd_coef": 1.265e-15
+  }
+],
+"RamanFiber":[{
+  "type_variety": "SSMF",
+  "dispersion": 1.67e-05,
+  "effective_area": 83e-12,
+  "pmd_coef": 1.265e-15
+  }
+],
+"Span":[{
+  "power_mode":true,
+  "delta_power_range_db": [-2,3,0.5],
+  "max_fiber_lineic_loss_for_raman": 0.25,
+  "target_extended_gain": 2.5,
+  "max_length": 150,
+  "length_units": "km",
+  "max_loss": 28,
+  "padding": 10,
+  "EOL": 0,
+  "con_in": 0,
+  "con_out": 0
+  }
+],
+"Roadm":[{
+  "target_pch_out_db": -19.5,
+  "add_drop_osnr": 38,
+  "pmd": 0,
+  "pdl": 0,
+  "restrictions": {
+                  "preamp_variety_list":[],
+                  "booster_variety_list":[]
+                  }
+  }],
+"SI":[{
+  "f_min": 191.3e12,
+  "baud_rate": 32e9,
+  "f_max":195.1e12,
+  "spacing": 50e9,
+  "power_dbm": 0,
+  "power_range_db": [0,0,1],
+  "tx_power_dbm": 4,
+  "roll_off": 0.15,
+  "tx_osnr": 40,
+  "sys_margins": 2
+  }],
+"Transceiver":[
+  {
+  "type_variety": "ADVA_TeraFlex",
+  "frequency":{
+              "min": 191.35e12,
+              "max": 196.1e12
+              },
+  "mode":[
+    {
+      "format": "mode 1",
+      "baud_rate": 50000000000.0,
+      "OSNR": 17.2,
+      "bit_rate": 200000000000.0,
+      "tx_osnr": 40,
+      "roll_off": 0.15,
+      "min_spacing": 50000000000.0,
+      "power": 0.0025118864,
+      "cost": 1
+      },
+      {
+      "format": "mode 2",
+      "baud_rate": 50000000000.0,
+      "OSNR": 10.5,
+      "bit_rate": 100000000000.0,
+      "tx_osnr": 40,
+      "roll_off": 0.15,
+      "min_spacing": 50000000000.0,
+      "power": 0.00125892541,
+      "cost": 1
+      }
+    ]
+  }
+]
+}

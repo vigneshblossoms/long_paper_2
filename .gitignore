@@ -1,0 +1,10 @@
+__pycache__/
+*.csv
+*.zip
+*.pcap
+*.json
+*.jpeg
+*.png
+*.jpg
+*.log
+*.txt

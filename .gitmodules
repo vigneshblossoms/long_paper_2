@@ -1,0 +1,3 @@
+[submodule "oopt-gnpy"]
+	path = oopt-gnpy
+	url = https://github.com/Telecominfraproject/oopt-gnpy.git
